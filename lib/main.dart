@@ -68,7 +68,7 @@ class _StartScreenState extends State<StartScreen> {
                     controller: _nameController,
                     style: TextStyle(color: Colors.white),
                     decoration: InputDecoration(
-                      labelText: 'Player Name',
+                      labelText: 'Nama Pemain',
                       labelStyle: TextStyle(color: Colors.yellow),
                       border: OutlineInputBorder(),
                       focusedBorder: OutlineInputBorder(
@@ -92,14 +92,14 @@ class _StartScreenState extends State<StartScreen> {
                       MaterialPageRoute(
                         builder: (context) => PacmanMaze(
                           playerName: _nameController.text.isEmpty
-                              ? 'Player 1'
+                              ? 'Pemain 1'
                               : _nameController.text,
                         ),
                       ),
                     );
                   },
                   child: Text(
-                    'START GAME',
+                    'MULAI GAME',
                     style: TextStyle(
                       fontSize: 20,
                       color: Colors.black,
@@ -115,7 +115,7 @@ class _StartScreenState extends State<StartScreen> {
                   setState(() => _showInstructions = !_showInstructions);
                 },
                 child: Text(
-                  _showInstructions ? 'BACK' : 'HOW TO PLAY',
+                  _showInstructions ? 'KEMBALI' : 'CARA BERMAIN',
                   style: TextStyle(color: Colors.white),
                 ),
               ),
@@ -131,7 +131,7 @@ class _StartScreenState extends State<StartScreen> {
                   child: Column(
                     children: [
                       Text(
-                        'HOW TO PLAY',
+                        'CARA BERMAIN',
                         style: TextStyle(
                           color: Colors.yellow,
                           fontSize: 24,
@@ -140,11 +140,11 @@ class _StartScreenState extends State<StartScreen> {
                       ),
                       SizedBox(height: 10),
                       Text(
-                        '1. Use the joystick to move Pacman\n'
-                            '2. Eat all dots to score points\n'
-                            '3. Avoid ghosts (red/pink/cyan)\n'
-                            '4. Big dots make ghosts vulnerable\n'
-                            '5. Set high scores!',
+                        '1. Gunakan joystick untuk menggerakkan Meo Pac\n'
+                            '2. Makan semua titik untuk mendapatkan poin\n'
+                            '3. Hindari hantu (merah/merah muda/biru)\n'
+                            '4. Titik besar membuat hantu lemah\n'
+                            '5. Raih skor tertinggi!',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       ),
                     ],
@@ -389,14 +389,14 @@ class _PacmanMazeState extends State<PacmanMaze> {
       builder: (_) => AlertDialog(
         backgroundColor: Colors.black,
         title: Text("Game Over", style: TextStyle(color: Colors.redAccent)),
-        content: Text("Score: $score", style: TextStyle(color: Colors.white)),
+        content: Text("Skor: $score", style: TextStyle(color: Colors.white)),
         actions: [
           TextButton(
             onPressed: () {
               Navigator.of(context).pop();
               restartGame();
             },
-            child: Text("Restart", style: TextStyle(color: Colors.yellow)),
+            child: Text("Mulai Ulang", style: TextStyle(color: Colors.yellow)),
           ),
         ],
       ),
@@ -541,7 +541,7 @@ class _PacmanMazeState extends State<PacmanMaze> {
                         ),
                       ),
                       Text(
-                        'Score: $score',
+                        'Skor: $score',
                         style: TextStyle(color: Colors.white, fontSize: 16,fontWeight: FontWeight.bold),
                       ),
                     ],
@@ -647,7 +647,7 @@ class _PacmanMazeState extends State<PacmanMaze> {
                       Text("GAME OVER",
                           style: TextStyle(color: Colors.red, fontSize: 24)),
                       SizedBox(height: 10),
-                      Text("Score: $score",
+                      Text("Skor: $score",
                           style: TextStyle(color: Colors.white, fontSize: 20)),
                       SizedBox(height: 20),
                       ElevatedButton(
@@ -655,7 +655,7 @@ class _PacmanMazeState extends State<PacmanMaze> {
                           backgroundColor: Colors.yellow,
                         ),
                         onPressed: restartGame,
-                        child: Text("PLAY AGAIN",
+                        child: Text("MAIN LAGI",
                             style: TextStyle(color: Colors.black)),
                       ),
                     ],
