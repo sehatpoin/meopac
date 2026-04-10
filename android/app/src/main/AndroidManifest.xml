@@ -33,6 +33,12 @@
         <meta-data
             android:name="contactEmail"
             android:value="sehatpoin@gmal.com" />
+        <meta-data
+            android:name="developerName"
+            android:value="Beddy" />
+        <meta-data
+            android:name="developerOrganization"
+            android:value="CV Poin Sehat" />
     </application>
     <!-- Required to query activities that can process text, see:
          https://developer.android.com/training/package-visibility and
