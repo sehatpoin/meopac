@@ -17,7 +17,7 @@ class PacmanApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Pacman',
+      title: 'Meo Pac',
       theme: ThemeData.dark().copyWith(
         primaryColor: Colors.blue[800],
         scaffoldBackgroundColor: Colors.black,
