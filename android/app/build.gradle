@@ -35,7 +35,7 @@ android {
 
     defaultConfig {
         applicationId = "com.sehatpoin.meopac"
-        minSdk = 21
+        minSdk = 22
         targetSdk = 35
         versionCode = flutterVersionCode.toInteger()
         versionName = flutterVersionName
@@ -45,9 +45,9 @@ android {
         release {
             // Ganti keystore ini dengan milik Anda sendiri sebelum release production
             storeFile file("release-keystore.jks")
-            storePassword "meopac123"
+            storePassword "Romekal@711"
             keyAlias "meopac"
-            keyPassword "meopac123"
+            keyPassword "Romekal@711"
         }
     }
 
