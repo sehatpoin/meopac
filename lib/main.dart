@@ -46,7 +46,7 @@ class _StartScreenState extends State<StartScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'PACMAN',
+                'Meo Pac',
                 style: TextStyle(
                   fontSize: 48,
                   fontWeight: FontWeight.bold,
