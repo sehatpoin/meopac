@@ -1,16 +1,18 @@
-# pman_1
+# Meo Pac
 
-A new Flutter project.
+Aplikasi game mobile yang dikembangkan oleh **Beddy**.
 
-## Getting Started
+## Tentang Aplikasi
 
-This project is a starting point for a Flutter application.
+Meo Pac adalah aplikasi game interaktif yang dirancang untuk memberikan pengalaman bermain yang menyenangkan.
 
-A few resources to get you started if this is your first Flutter project:
+**Pengembang:** Beddy
+**Email:** sehatpoin@gmal.com
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Kebijakan Privasi
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Baca Kebijakan Privasi kami di [sini](https://sehatpoin.github.io/meopac/privacy.html).
+
+## Lisensi
+
+&copy; 2026 Meo Pac oleh Beddy. Hak cipta dilindungi.
