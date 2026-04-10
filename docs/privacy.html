@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — Meo Pac</title>
+  <title>Kebijakan Privasi — Meo Pac</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --primary: #5B2D8E;
@@ -20,11 +22,13 @@
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
+    html { scroll-behavior: smooth; }
+
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       background-color: var(--bg);
       color: var(--text);
-      line-height: 1.75;
+      line-height: 1.8;
       font-size: 16px;
       -webkit-font-smoothing: antialiased;
     }
@@ -60,13 +64,13 @@
       width: 28px;
       height: 28px;
       border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--accent);
     }
 
-    .app-icon img {
-      width: 100%;
-      height: 100%;
-      border-radius: 8px;
-    }
+    .app-icon svg { width: 18px; height: 18px; }
 
     .header h1 {
       font-size: 42px;
@@ -108,9 +112,7 @@
       gap: 8px 32px;
     }
 
-    .toc ol li {
-      font-size: 14px;
-    }
+    .toc ol li { font-size: 14px; }
 
     .toc ol li a {
       color: var(--text-muted);
@@ -118,14 +120,10 @@
       transition: color 0.2s;
     }
 
-    .toc ol li a:hover {
-      color: var(--accent);
-    }
+    .toc ol li a:hover { color: var(--accent); }
 
     /* SECTIONS */
-    .section {
-      margin-bottom: 48px;
-    }
+    .section { margin-bottom: 48px; }
 
     .section h2 {
       font-size: 20px;
@@ -189,8 +187,14 @@
       margin: 16px 0;
     }
 
-    .highlight-box p {
-      margin: 0;
+    .highlight-box p { margin: 0; color: var(--text-muted); }
+    .highlight-box strong { color: var(--text); }
+
+    .section .subtitle {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 20px 0 10px;
     }
 
     /* CONTACT CARD */
@@ -216,11 +220,7 @@
       flex-shrink: 0;
     }
 
-    .contact-card .icon-wrap svg {
-      width: 22px;
-      height: 22px;
-      fill: #fff;
-    }
+    .contact-card .icon-wrap svg { width: 22px; height: 22px; fill: #fff; }
 
     .contact-card .label {
       font-size: 12px;
@@ -231,20 +231,9 @@
       margin-bottom: 4px;
     }
 
-    .contact-card .value {
-      font-size: 16px;
-      font-weight: 500;
-      color: var(--text);
-    }
-
-    .contact-card .value a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    .contact-card .value a:hover {
-      text-decoration: underline;
-    }
+    .contact-card .value { font-size: 16px; font-weight: 500; color: var(--text); }
+    .contact-card .value a { color: var(--accent); text-decoration: none; }
+    .contact-card .value a:hover { text-decoration: underline; }
 
     /* FOOTER */
     footer {
@@ -256,10 +245,7 @@
       font-size: 13px;
     }
 
-    footer .brand {
-      font-weight: 600;
-      color: var(--text-muted);
-    }
+    footer .brand { font-weight: 600; color: var(--text-muted); }
 
     /* RESPONSIVE */
     @media (max-width: 600px) {
@@ -270,14 +256,11 @@
       .contact-card { flex-direction: column; align-items: flex-start; }
     }
 
-    /* ACCENT SCROLLBAR */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: var(--text-dim); }
   </style>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -286,142 +269,142 @@
     <header class="header">
       <div class="app-badge">
         <div class="app-icon">
-          <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="50" cy="50" r="45" fill="#FF6B35"/>
-            <circle cx="50" cy="50" r="30" fill="#FF6B35"/>
-            <path d="M50 35 L50 65 M50 50 L80 25 M50 50 L80 50 M50 50 L80 75" stroke="#FF6B35" stroke-width="8" stroke-linecap="round"/>
+            <path d="M50 20 C50 20, 20 50, 20 50 C20 50, 50 80, 50 80 C50 80, 80 50, 80 50 C80 50, 50 20, 50 20Z" fill="#0D1117"/>
+            <circle cx="36" cy="40" r="6" fill="#FF6B35"/>
           </svg>
         </div>
         Meo Pac · Sehat Poin
       </div>
-      <h1>Privacy Policy</h1>
-      <p class="last-updated">Last updated: April 10, 2026</p>
+      <h1>Kebijakan Privasi</h1>
+      <p class="last-updated">Terakhir diperbarui: 10 April 2026</p>
     </header>
 
     <!-- TABLE OF CONTENTS -->
     <nav class="toc">
-      <div class="toc-title">Table of Contents</div>
+      <div class="toc-title">Daftar Isi</div>
       <ol>
-        <li><a href="#intro">Introduction</a></li>
-        <li><a href="#collect">Information We Collect</a></li>
-        <li><a href="#use">How We Use Your Information</a></li>
-        <li><a href="#storage">Data Storage</a></li>
-        <li><a href="#sharing">Data Sharing</a></li>
-        <li><a href="#security">Data Security</a></li>
-        <li><a href="#children">Children's Privacy</a></li>
-        <li><a href="#rights">Your Rights</a></li>
-        <li><a href="#third-party">Third-Party Services</a></li>
-        <li><a href="#changes">Changes to This Policy</a></li>
-        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#intro">Pendahuluan</a></li>
+        <li><a href="#collect">Informasi yang Kami Kumpulkan</a></li>
+        <li><a href="#use">Cara Penggunaan Informasi</a></li>
+        <li><a href="#storage">Penyimpanan Data</a></li>
+        <li><a href="#sharing">Berbagi Data</a></li>
+        <li><a href="#security">Keamanan Data</a></li>
+        <li><a href="#children">Privasi Anak</a></li>
+        <li><a href="#rights">Hak Anda</a></li>
+        <li><a href="#third-party">Layanan Pihak Ketiga</a></li>
+        <li><a href="#changes">Perubahan Kebijakan</a></li>
+        <li><a href="#contact">Hubungi Kami</a></li>
       </ol>
     </nav>
 
-    <!-- SECTION 1 -->
+    <!-- 1 -->
     <section class="section" id="intro">
-      <h2><span class="num">1</span> Introduction</h2>
-      <p>Meo Pac ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application <strong>Meo Pac</strong>, developed and operated by <strong>Sehat Poin</strong>.</p>
-      <p>By downloading, installing, or using Meo Pac, you agree to the collection and use of information in accordance with this policy. If you do not agree, please do not use the app.</p>
+      <h2><span class="num">1</span> Pendahuluan</h2>
+      <p>Meo Pac ("kami", "milik kami", atau "kami") berkomitmen untuk melindungi privasi Anda. Kebijakan Privasi ini menjelaskan bagaimana kami mengumpulkan, menggunakan, mengungkapkan, dan mengamankan informasi Anda ketika Anda menggunakan aplikasi mobile <strong>Meo Pac</strong>, yang dikembangkan dan dioperasikan oleh <strong>Sehat Poin</strong>.</p>
+      <p>Dengan mengunduh, menginstal, atau menggunakan Meo Pac, Anda menyetujui pengumpulan dan penggunaan informasi sesuai dengan kebijakan ini. Jika Anda tidak menyetujui, silakan jangan gunakan aplikasi ini.</p>
     </section>
 
-    <!-- SECTION 2 -->
+    <!-- 2 -->
     <section class="section" id="collect">
-      <h2><span class="num">2</span> Information We Collect</h2>
-      <p>We collect information in order to provide and improve the Meo Pac experience. The types of information we collect are outlined below.</p>
+      <h2><span class="num">2</span> Informasi yang Kami Kumpulkan</h2>
+      <p>Kami mengumpulkan informasi untuk menyediakan dan meningkatkan pengalaman Meo Pac. Jenis informasi yang kami kumpulkan adalah sebagai berikut:</p>
 
       <div class="highlight-box">
-        <p><strong>2.1 Information You Provide</strong></p>
+        <p><strong>2.1 Informasi yang Anda Berikan</strong></p>
         <ul>
-          <li>Account information such as your email address (if applicable)</li>
-          <li>User-generated content submitted within the app</li>
+          <li>Informasi akun seperti alamat email (jika berlaku)</li>
+          <li>Konten yang dihasilkan pengguna yang dikirimkan dalam aplikasi</li>
         </ul>
       </div>
 
       <div class="highlight-box">
-        <p><strong>2.2 Information Collected Automatically</strong></p>
+        <p><strong>2.2 Informasi yang Dikumpulkan Secara Otomatis</strong></p>
         <ul>
-          <li>Device type, operating system version, and unique device identifiers</li>
-          <li>App usage data such as game sessions, features accessed, and preferences</li>
-          <li>Game progress, scores, and settings stored locally on your device</li>
+          <li>Jenis perangkat, versi sistem operasi, dan pengenal perangkat unik</li>
+          <li>Data penggunaan aplikasi seperti sesi game, fitur yang diakses, dan preferensi</li>
+          <li>Progres game, skor, dan pengaturan yang tersimpan secara lokal di perangkat Anda</li>
         </ul>
       </div>
     </section>
 
-    <!-- SECTION 3 -->
+    <!-- 3 -->
     <section class="section" id="use">
-      <h2><span class="num">3</span> How We Use Your Information</h2>
-      <p>We use the collected information for the following purposes:</p>
+      <h2><span class="num">3</span> Cara Penggunaan Informasi</h2>
+      <p>Kami menggunakan informasi yang dikumpulkan untuk tujuan berikut:</p>
       <ul>
-        <li>To provide and maintain core functionality of Meo Pac</li>
-        <li>To store your game progress and preferences locally on your device</li>
-        <li>To improve, personalize, and optimize the app experience</li>
-        <li>To analyze app usage and performance for product improvement</li>
-        <li>To detect, prevent, and address technical issues or unauthorized use</li>
-        <li>To comply with applicable legal obligations</li>
+        <li>Menyediakan dan menjaga fungsionalitas utama Meo Pac</li>
+        <li>Menyimpan progres game dan preferensi Anda secara lokal di perangkat</li>
+        <li>Meningkatkan, mempersonalisasi, dan mengoptimalkan pengalaman aplikasi</li>
+        <li>Menganalisis penggunaan dan performa aplikasi untuk perbaikan produk</li>
+        <li>Mendeteksi, mencegah, dan menangani masalah teknis atau penggunaan tidak sah</li>
+        <li>Memenuhi kewajiban hukum yang berlaku</li>
       </ul>
     </section>
 
-    <!-- SECTION 4 -->
+    <!-- 4 -->
     <section class="section" id="storage">
-      <h2><span class="num">4</span> Data Storage</h2>
+      <h2><span class="num">4</span> Penyimpanan Data</h2>
       <div class="highlight-box">
-        <p><strong>Local Storage Only</strong></p>
-        <p>Your game progress, settings, and preferences are stored locally on your device using shared preferences. This data remains on your device and is <strong>not automatically transmitted</strong> to our servers.</p>
+        <p><strong>Penyimpanan Lokal Saja</strong></p>
+        <p>Progres game, pengaturan, dan preferensi Anda disimpan secara lokal di perangkat menggunakan penyimpanan bersama. Data ini tetap berada di perangkat Anda dan <strong>tidak secara otomatis dikirimkan</strong> ke server kami.</p>
       </div>
-      <p>Meo Pac does not require user registration or cloud sync. All game data is retained locally on your device. Clearing the app data will remove all stored preferences.</p>
+      <p>Meo Pac tidak memerlukan pendaftaran pengguna atau sinkronisasi cloud. Semua data game disimpan secara lokal di perangkat Anda. Menghapus data aplikasi akan menghapus semua preferensi yang tersimpan.</p>
     </section>
 
-    <!-- SECTION 5 -->
+    <!-- 5 -->
     <section class="section" id="sharing">
-      <h2><span class="num">5</span> Data Sharing and Disclosure</h2>
-      <p>We do not sell, trade, or transfer your personal information to outside parties, except in the following limited circumstances:</p>
+      <h2><span class="num">5</span> Berbagi dan Pengungkapan Data</h2>
+      <p>Kami tidak menjual, memperdagangkan, atau mengalihkan informasi pribadi Anda ke pihak luar, kecuali dalam keadaan terbatas berikut:</p>
       <ul>
-        <li><strong>With Your Consent</strong> — We may share information when you explicitly agree.</li>
-        <li><strong>Legal Compliance</strong> — We may disclose information if required by law, regulation, or legal process.</li>
-        <li><strong>Service Providers</strong> — We may engage trusted third-party providers to assist in app operations, subject to confidentiality obligations.</li>
+        <li><strong>Dengan Persetujuan Anda</strong> — Kami dapat membagikan informasi saat Anda secara tegas menyetujui.</li>
+        <li><strong>Kepatuhan Hukum</strong> — Kami dapat mengungkapkan informasi jika diharuskan oleh hukum, regulasi, atau proses hukum.</li>
+        <li><strong>Penyedia Layanan</strong> — Kami dapat melibatkan penyedia layanan pihak ketiga yang tepercaya untuk membantu operasi aplikasi, dengan kewajiban kerahasiaan.</li>
       </ul>
     </section>
 
-    <!-- SECTION 6 -->
+    <!-- 6 -->
     <section class="section" id="security">
-      <h2><span class="num">6</span> Data Security</h2>
-      <p>We implement reasonable security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of electronic transmission or storage is 100% secure. We cannot guarantee absolute security, but we are committed to maintaining appropriate safeguards.</p>
+      <h2><span class="num">6</span> Keamanan Data</h2>
+      <p>Kami menerapkan langkah-langkah keamanan yang wajar untuk melindungi informasi pribadi Anda dari akses tidak sah, perubahan, pengungkapan, atau penghancuran. Namun, tidak ada metode transmisi atau penyimpanan elektronik yang 100% aman. Kami tidak dapat menjamin keamanan absolut, tetapi kami berkomitmen untuk menjaga perlindungan yang sesuai.</p>
     </section>
 
-    <!-- SECTION 7 -->
+    <!-- 7 -->
     <section class="section" id="children">
-      <h2><span class="num">7</span> Children's Privacy</h2>
-      <p>Meo Pac is not intended for children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have inadvertently collected such information, we will take steps to delete it promptly.</p>
+      <h2><span class="num">7</span> Privasi Anak</h2>
+      <p>Meo Pac tidak ditujukan untuk anak-anak berusia di bawah 13 tahun. Kami tidak dengan sengaja mengumpulkan informasi pribadi dari anak-anak di bawah 13 tahun. Jika kami mengetahui bahwa kami telah mengumpulkan informasi tersebut secara tidak sengaja, kami akan mengambil langkah untuk segera menghapusnya.</p>
     </section>
 
-    <!-- SECTION 8 -->
+    <!-- 8 -->
     <section class="section" id="rights">
-      <h2><span class="num">8</span> Your Rights</h2>
-      <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+      <h2><span class="num">8</span> Hak Anda</h2>
+      <p>Tergantung pada lokasi Anda, Anda mungkin memiliki hak berikut terkait informasi pribadi Anda:</p>
       <ul>
-        <li>The right to access the personal information we hold about you</li>
-        <li>The right to request correction of inaccurate information</li>
-        <li>The right to request deletion of your information</li>
-        <li>The right to opt out of certain data collection practices</li>
+        <li>Hak untuk mengakses informasi pribadi yang kami miliki tentang Anda</li>
+        <li>Hak untuk meminta perbaikan informasi yang tidak akurat</li>
+        <li>Hak untuk meminta penghapusan informasi Anda</li>
+        <li>Hak untuk memilih keluar dari praktik pengumpulan data tertentu</li>
       </ul>
-      <p>To exercise any of these rights, please contact us using the information provided below.</p>
+      <p>Untuk menggunakan salah satu dari hak ini, silakan hubungi kami menggunakan informasi yang disediakan di bawah.</p>
     </section>
 
-    <!-- SECTION 9 -->
+    <!-- 9 -->
     <section class="section" id="third-party">
-      <h2><span class="num">9</span> Third-Party Services</h2>
-      <p>Meo Pac may contain links to third-party websites or services that are not owned or controlled by us. We are not responsible for the privacy practices of these third parties. We encourage you to review their privacy policies before interacting with any linked services.</p>
+      <h2><span class="num">9</span> Layanan Pihak Ketiga</h2>
+      <p>Meo Pac mungkin berisi tautan ke situs web atau layanan pihak ketiga yang tidak dimiliki atau dikendalikan oleh kami. Kami tidak bertanggung jawab atas praktik privasi pihak ketiga ini. Kami mendorong Anda untuk meninjau kebijakan privasi mereka sebelum berinteraksi dengan layanan yang ditautkan.</p>
     </section>
 
-    <!-- SECTION 10 -->
+    <!-- 10 -->
     <section class="section" id="changes">
-      <h2><span class="num">10</span> Changes to This Policy</h2>
-      <p>We may update this Privacy Policy from time to time. Any material changes will be reflected by updating the "Last updated" date at the top of this page. We encourage you to review this policy periodically for any updates.</p>
+      <h2><span class="num">10</span> Perubahan Kebijakan Ini</h2>
+      <p>Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu. Setiap perubahan material akan tercermin dengan memperbarui tanggal "Terakhir diperbarui" di bagian atas halaman ini. Kami mendorong Anda untuk meninjau kebijakan ini secara berkala untuk setiap pembaruan.</p>
     </section>
 
-    <!-- SECTION 11 -->
+    <!-- 11 -->
     <section class="section" id="contact">
-      <h2><span class="num">11</span> Contact Us</h2>
-      <p>If you have any questions or concerns about this Privacy Policy or our data practices, please do not hesitate to reach out to us.</p>
+      <h2><span class="num">11</span> Hubungi Kami</h2>
+      <p>Jika Anda memiliki pertanyaan atau kekhawatiran tentang Kebijakan Privasi ini atau praktik data kami, jangan ragu untuk menghubungi kami.</p>
     </section>
 
     <!-- CONTACT CARD -->
@@ -437,13 +420,13 @@
       </div>
       <div style="flex:1"></div>
       <div>
-        <div class="label">Developer</div>
+        <div class="label">Pengembang</div>
         <div class="value">Sehat Poin</div>
       </div>
     </div>
 
     <footer>
-      <p>&copy; 2026 <span class="brand">Meo Pac</span> by Sehat Poin. All rights reserved.</p>
+      <p>&copy; 2026 <span class="brand">Meo Pac</span> oleh Sehat Poin. Hak cipta dilindungi.</p>
     </footer>
   </div>
 </body>
